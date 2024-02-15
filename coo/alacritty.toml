@@ -1,0 +1,88 @@
+[colors.bright]
+black = "#575656"
+blue = "#82aaff"
+cyan = "#7fdbca"
+green = "#22da6e"
+magenta = "#c792ea"
+red = "#ef5350"
+white = "#ffffff"
+yellow = "#ffeb95"
+
+[colors.cursor]
+cursor = "#33FF33"
+text = "#011627"
+
+[colors.normal]
+black = "#011627"
+blue = "#82aaff"
+cyan = "#21c7a8"
+green = "#22da6e"
+magenta = "#c792ea"
+red = "#ef5350"
+white = "#ffffff"
+yellow = "#c5e478"
+
+[colors.primary]
+background = "#1E1E1E"
+foreground = "#d6deeb"
+
+[colors.selection]
+background = "#ffff33"
+
+[cursor]
+style = "block"
+unfocused_hollow = true
+
+[font]
+size = 9.2
+
+[font.bold]
+family = "MonoLisa-Bold"
+style = "Bold"
+
+[font.bold_italic]
+family = "MonoLisa-Black"
+style = "Blod"
+
+[font.italic]
+family = "MonoLisa-MediumItalic"
+style = "Italic"
+
+[font.normal]
+family = "MonoLisa-Regular"
+style = "regular"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode = "~Alt"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mode = "~Alt"
+mods = "Control"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 3000
+multiplier = 3
+
+[shell]
+program = "/bin/bash"
+args = ["-l", "-c", "$HOME/neoarch/scripts/etc/open.sh"]
+
+
+[window]
+dynamic_title = true
+opacity = 1
+
+[selection]
+save_to_clipboard = true

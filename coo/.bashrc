@@ -14,7 +14,7 @@ export HISTTIMEFORMAT="[%F %T] "
 export HISTFILE=~/.bash_history
 alias rm="trash-put"
 alias ll='ls -al --color --group-directories-first'
-alias l='ls -a -t --color -h --group-directories-first'
+alias ls='ls -a -t --color -h --group-directories-first'
 alias v='nvim'
 alias ip='ip --color=auto'
 shopt -s autocd

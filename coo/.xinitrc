@@ -4,7 +4,6 @@ export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-FILE=/dev/input/by-id/usb-Topre_Corporation_HHKB_Professional-event-kbd
 if [ -L "$FILE" ]; then
 	setxkbmap -layout us -option
 else
@@ -16,9 +15,7 @@ fi
 
 # typing speed
 xset r rate 266 26
-# opening animation
 
 exec sxhkd &
 exec fcitx5 &
-
 exec dwm

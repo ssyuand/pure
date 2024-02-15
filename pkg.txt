@@ -1,4 +1,5 @@
 # Arch
+dialog
 sof-firmware 	  #opening sound
 archlinux-keyring #update keyrings to latest to prevent packages failing to install
 reflector         #Retrieve the latest mirror list from the Arch Linux Mirror Status page.

@@ -12,7 +12,7 @@ sudo sed -i 's/^#NoProgressBar/DisableDownloadTimeout/' /etc/pacman.conf
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Environment configuration
 sudo tar -xvf $HOME_DIR/pure/coo/font.tar -C /usr/share/fonts
-cp -r $HOME_DIR/pure/coo/.config $HOME_DIR/
+cp -r $HOME_DIR/pure/coo/alacritty.toml $HOME_DIR/.config
 cp $HOME_DIR/pure/coo/.bashrc $HOME_DIR/
 cp $HOME_DIR/pure/coo/.xinitrc $HOME_DIR/
 cp $HOME_DIR/pure/coo/.gitconfig $HOME_DIR/
@@ -25,6 +25,3 @@ sudo make install
 # Fcitx
 fcitx5 &
 sudo git clone https://github.com/catppuccin/fcitx5.git $HOME_DIR/fcitx5
-sudo mkdir -p $HOME_DIR/.local/share/fcitx5/themes/
-cp -r $HOME_DIR/fcitx5/src/catppuccin-mocha $HOME_DIR/.local/share/fcitx5/themes
-echo "Theme=Catppuccin" >$HOME_DIR/.config/fcitx5/conf/classicui.conf
