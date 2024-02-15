@@ -1,0 +1,10 @@
+super + p
+    rofi -modi drun,run -show drun -show-icons
+super + o
+    ~/neoarch/scripts/etc/rofi-search.sh
+super + shift + k
+    ~/neoarch/scripts/etc/bdown.sh
+super + shift + j
+    ~/neoarch/scripts/etc/bup.sh
+super + shift + s
+    scrot -s

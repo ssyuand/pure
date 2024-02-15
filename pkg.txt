@@ -1,0 +1,29 @@
+# Arch
+archlinux-keyring #update keyrings to latest to prevent packages failing to install
+reflector         #Retrieve the latest mirror list from the Arch Linux Mirror Status page.
+# Terminal_Tool
+neovim            #Text editor
+dhcpcd            #Dhcpcd is a "DHCP" and DHCPv6 client.
+alacritty         #Fast, Rust-based terminal emulator.
+bat               #Rust version of "cat" command with syntax highlighting.
+fd                #Fast, user-friendly alternative to "find" command.
+ripgrep           #Rust version of "grep", line-oriented search tool.
+fzf               #Interactive fuzzy finder for the command-line.
+iwd               #IWD is the iNet wireless daemon.
+tmux              #Terminal multiplexer.
+zoxide            #Fast directory navigation tool for the terminal.
+trash-cli         #Command-line tool to move files to trash.
+# Xserver
+xclip             #Xclip is a command-line tool to copy and paste data.
+xorg-server       #Xorg-server is the display server software for X Window System.
+xorg-setxkbmap    #Sets X.Org keyboard layout.
+xorg-xinit        #initializing X.Org sessions.
+# Input_Method
+fcitx5
+fcitx5-chewing
+fcitx5-config-qt
+#Total packages scheduled for installation: 18"
+#20 packages installed successfully
+#20 packages installed successfully
+#20 packages installed successfully
+#20 packages installed successfully
