@@ -10,7 +10,7 @@ sudo pacman -Sy --noconfirm --needed
 sed -i 's/^#Color/Color/' /etc/pacman.conf
 sed -i 's/^#NoProgressBar/DisableDownloadTimeout/' /etc/pacman.conf
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
-reflector --download-timeout 5 -a 48 --protocol https -c $iso -l 20 --sort rate --save /etc/pacman.d/mirrorlist
+reflector --download-timeout 5 -a 48 --protocol https -c TW -l 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 # Read each package name from pkg.txt and install them one by one
 packages=$(awk '!/^#/ && NF {print $1}' $HOME_DIR/pure/pkg.txt)
