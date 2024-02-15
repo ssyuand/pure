@@ -13,6 +13,7 @@ iwd               #IWD is the iNet wireless daemon.
 tmux              #Terminal multiplexer.
 zoxide            #Fast directory navigation tool for the terminal.
 trash-cli         #Command-line tool to move files to trash.
+git-delta         #A syntax-highlighting pager for git, diff, and grep output
 # Xserver
 xclip             #Xclip is a command-line tool to copy and paste data.
 xorg-server       #Xorg-server is the display server software for X Window System.
