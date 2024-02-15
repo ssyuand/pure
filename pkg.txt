@@ -28,3 +28,6 @@ fcitx5-config-qt
 #20 packages installed successfully
 #20 packages installed successfully
 #20 packages installed successfully
+#21 packages installed successfully
+#21 packages installed successfully
+#21 packages installed successfully
