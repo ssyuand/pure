@@ -1,4 +1,5 @@
 # Arch
+sof-firmware 	  #opening sound
 archlinux-keyring #update keyrings to latest to prevent packages failing to install
 reflector         #Retrieve the latest mirror list from the Arch Linux Mirror Status page.
 # Terminal_Tool
@@ -23,11 +24,4 @@ xorg-xinit        #initializing X.Org sessions.
 fcitx5
 fcitx5-chewing
 fcitx5-config-qt
-#Total packages scheduled for installation: 18"
-#20 packages installed successfully
-#20 packages installed successfully
-#20 packages installed successfully
-#20 packages installed successfully
-#21 packages installed successfully
-#21 packages installed successfully
-#21 packages installed successfully
+noto-fonts-cjk

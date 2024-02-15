@@ -11,13 +11,13 @@ sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i 's/^#NoProgressBar/DisableDownloadTimeout/' /etc/pacman.conf
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Environment configuration
-sudo tar -xvf $HOME_DIR/pure/cc/font.tar -C /usr/share/fonts
-cp -r $HOME_DIR/pure/cc/.config $HOME_DIR/
-cp $HOME_DIR/pure/cc/.bashrc $HOME_DIR/
-cp $HOME_DIR/pure/cc/.xinitrc $HOME_DIR/
-cp $HOME_DIR/pure/cc/.gitconfig $HOME_DIR/
-cp $HOME_DIR/pure/cc/.tmux.conf $HOME_DIR/
-sudo cp $HOME_DIR/pure/cc/30-touchpad.conf /etc/X11/xorg.conf.d
+sudo tar -xvf $HOME_DIR/pure/coo/font.tar -C /usr/share/fonts
+cp -r $HOME_DIR/pure/coo/.config $HOME_DIR/
+cp $HOME_DIR/pure/coo/.bashrc $HOME_DIR/
+cp $HOME_DIR/pure/coo/.xinitrc $HOME_DIR/
+cp $HOME_DIR/pure/coo/.gitconfig $HOME_DIR/
+cp $HOME_DIR/pure/coo/.tmux.conf $HOME_DIR/
+sudo cp $HOME_DIR/pure/coo/30-touchpad.conf /etc/X11/xorg.conf.d
 # Dwm
 git clone https://git.suckless.org/dwm $HOME_DIR/dwm
 cd $HOME_DIR/dwm
