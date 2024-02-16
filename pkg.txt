@@ -3,7 +3,9 @@ dialog
 sof-firmware 	  #opening sound
 archlinux-keyring #update keyrings to latest to prevent packages failing to install
 reflector         #Retrieve the latest mirror list from the Arch Linux Mirror Status page.
+dmenu
 # Terminal_Tool
+chromium	  #browser
 neovim            #Text editor
 dhcpcd            #Dhcpcd is a "DHCP" and DHCPv6 client.
 alacritty         #Fast, Rust-based terminal emulator.
@@ -16,11 +18,7 @@ tmux              #Terminal multiplexer.
 zoxide            #Fast directory navigation tool for the terminal.
 trash-cli         #Command-line tool to move files to trash.
 git-delta         #A syntax-highlighting pager for git, diff, and grep output
-# Xserver
 xclip             #Xclip is a command-line tool to copy and paste data.
-xorg-server       #Xorg-server is the display server software for X Window System.
-xorg-setxkbmap    #Sets X.Org keyboard layout.
-xorg-xinit        #initializing X.Org sessions.
 # Input_Method
 fcitx5
 fcitx5-chewing
