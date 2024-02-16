@@ -4,14 +4,11 @@ export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-if [ -L "$FILE" ]; then
-	setxkbmap -layout us -option
-else
-	setxkbmap -layout us -option ctrl:swapcaps
-	setxkbmap -option ctrl:swap_rctrl_lwin
-fi
+setxkbmap -layout us -option ctrl:swapcaps
+setxkbmap -option altwin:swap_lalt_lwin
+setxkbmap -option ctrl:swap_rctrl_lwin
 
-~/neoarch/scripts/etc/statusbar.sh &
+~/pure/coo/statusbar.sh &
 
 # typing speed
 xset r rate 266 26
