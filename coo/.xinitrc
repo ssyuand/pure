@@ -2,7 +2,6 @@
 export GTK_IM_MODULE=fcitx5
 export QT_IM_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
-export _JAVA_AWT_WM_NONREPARENTING=1
 
 setxkbmap -layout us -option ctrl:swapcaps
 setxkbmap -option altwin:swap_lalt_lwin

@@ -1,11 +1,11 @@
 # Arch
-dialog
+dialog 		  #dialog for tmux
 sof-firmware 	  #opening sound
 archlinux-keyring #update keyrings to latest to prevent packages failing to install
 reflector         #Retrieve the latest mirror list from the Arch Linux Mirror Status page.
 dmenu
 # Terminal_Tool
-chromium	  #browser
+chromium	  #google browser
 neovim            #Text editor
 dhcpcd            #Dhcpcd is a "DHCP" and DHCPv6 client.
 alacritty         #Fast, Rust-based terminal emulator.
@@ -23,4 +23,5 @@ xclip             #Xclip is a command-line tool to copy and paste data.
 fcitx5
 fcitx5-chewing
 fcitx5-config-qt
+fcitx5-im
 noto-fonts-cjk

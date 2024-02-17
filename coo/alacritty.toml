@@ -56,18 +56,6 @@ style = "regular"
 x = 0
 y = 0
 
-[[keyboard.bindings]]
-action = "ScrollPageUp"
-key = "PageUp"
-mode = "~Alt"
-mods = "Control"
-
-[[keyboard.bindings]]
-action = "ScrollPageDown"
-key = "PageDown"
-mode = "~Alt"
-mods = "Control"
-
 [mouse]
 hide_when_typing = true
 
@@ -76,13 +64,56 @@ history = 3000
 multiplier = 3
 
 [shell]
+args = ["-l", "-c", "$HOME/pure/coo/open.sh"]
 program = "/bin/bash"
-args = ["-l", "-c", "$HOME/neoarch/scripts/etc/open.sh"]
-
 
 [window]
-dynamic_title = true
 opacity = 1
 
-[selection]
-save_to_clipboard = true
+# Super+数字切换 tmux 窗口
+[[keyboard.bindings]]
+key = "1"
+mods = "Super"
+chars = "\u001b1"
+
+[[keyboard.bindings]]
+key = "2"
+mods = "Super"
+chars = "\u001b2"
+
+[[keyboard.bindings]]
+key = "3"
+mods = "Super"
+chars = "\u001b3"
+
+[[keyboard.bindings]]
+key = "4"
+mods = "Super"
+chars = "\u001b4"
+
+[[keyboard.bindings]]
+key = "5"
+mods = "Super"
+chars = "\u001b5"
+
+[[keyboard.bindings]]
+key = "6"
+mods = "Super"
+chars = "\u001b6"
+
+[[keyboard.bindings]]
+key = "7"
+mods = "Super"
+chars = "\u001b7"
+
+[[keyboard.bindings]]
+key = "8"
+mods = "Super"
+chars = "\u001b8"
+
+[[keyboard.bindings]]
+key = "9"
+mods = "Super"
+chars = "\u001b9"
+
+
