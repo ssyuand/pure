@@ -25,4 +25,6 @@ fcitx5
 fcitx5-chewing
 fcitx5-config-qt
 fcitx5-im
+#font
 noto-fonts-cjk
+ttf-nerd-fonts-symbols
