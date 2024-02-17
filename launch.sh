@@ -12,6 +12,7 @@ sudo sed -i 's/^#NoProgressBar/DisableDownloadTimeout/' /etc/pacman.conf
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Environment configuration
 sudo tar -xvf $HOME_DIR/pure/coo/font.tar -C /usr/share/fonts
+mkdir $HOME_DIR/.config/alacritty
 cp $HOME_DIR/pure/coo/alacritty.toml $HOME_DIR/.config/alacritty/
 cp $HOME_DIR/pure/coo/.bashrc $HOME_DIR/
 cp $HOME_DIR/pure/coo/.xinitrc $HOME_DIR/
@@ -22,6 +23,3 @@ sudo cp $HOME_DIR/pure/coo/30-touchpad.conf /etc/X11/xorg.conf.d
 git clone https://git.suckless.org/dwm $HOME_DIR/dwm
 cd $HOME_DIR/dwm
 sudo make install
-# Fcitx
-fcitx5 &
-sudo git clone https://github.com/catppuccin/fcitx5.git $HOME_DIR/fcitx5
