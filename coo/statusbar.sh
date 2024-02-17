@@ -45,3 +45,4 @@ get_status() {
 print_date() {
 	date +" %a %d %b %Y |  %I:%M:%S %p %Z"
 }
+xsetroot -name "$(print_wifi) $(print_date) |$(get_status)"
