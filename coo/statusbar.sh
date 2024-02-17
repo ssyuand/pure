@@ -1,48 +1,62 @@
 #!/bin/bash
-print_wifi() {
-	ip=$(ip route get 8.8.8.8 2>/dev/null | grep -Eo 'src [0-9.]+' | grep -Eo '[0-9.]+')
-	echo -e "[ $ip ]"
+
+# 获取 WiFi IP 地址
+get_wifi_ip() {
+    ip=$(ip route get 8.8.8.8 2>/dev/null | grep -Eo 'src [0-9.]+' | grep -Eo '[0-9.]+')
+    if [ -n "$ip" ]; then
+        echo "[ $ip ]"
+    else
+        echo "[ No WiFi ]"
+    fi
 }
 
-battery="BAT0"
-
+# 检查是否存在指定的电池
 has_battery() {
-	if [ -d /sys/class/power_supply/$battery ]; then
-		return 0
-	fi
-	return 1
+    battery_path="/sys/class/power_supply/$battery"
+    [ -d "$battery_path" ]
 }
+
+# 获取电池状态
 get_battery_status() {
-	charge="$(get_charge)"
-	charge_st="$(get_charging_status)"
-	Charging="⚡"
-	no_Charging=""
-	if [[ $charge_st == "Charging" ]]; then
-		echo ""$charge"% "$Charging""
-	else
-		echo ""$no_Charging" "$charge"%"
-
-	fi
+    if has_battery && [ -e "/sys/class/power_supply/$battery/status" ]; then
+        charge=$(get_charge)
+        status=$(get_charging_status)
+        if [ "$status" == "Charging" ]; then
+            echo "$charge% ⚡"
+        else
+            echo "$charge%"
+        fi
+    fi
 }
 
+# 获取充电状态
 get_charging_status() {
-	cat "/sys/class/power_supply/$battery/status"
+    cat "/sys/class/power_supply/$battery/status"
 }
 
+# 获取电池电量
 get_charge() {
-	cat "/sys/class/power_supply/$battery/capacity"
+    cat "/sys/class/power_supply/$battery/capacity"
 }
 
-get_status() {
-	battery_status=""
-	if $(has_battery); then
-		battery_status=" $(get_battery_status)"
-	fi
-
-	echo "${battery_status}"
+# 获取当前日期和时间
+get_date() {
+    date +"%a %d %b %Y | %I:%M:%S %p %Z"
 }
 
-print_date() {
-	date +" %a %d %b %Y |  %I:%M:%S %p %Z"
+# 主循环，每隔一分钟更新一次状态栏
+update_status() {
+    while true; do
+        xsetroot -name "$(get_wifi_ip) $(get_date) | $(get_battery_status)"
+        sleep 10
+    done
 }
-xsetroot -name "$(print_wifi) $(print_date) |$(get_status)"
+
+# 主函数
+main() {
+    battery="BAT0"  # 电池名称
+    update_status
+}
+
+# 运行主函数
+main
