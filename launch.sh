@@ -23,3 +23,6 @@ sudo cp $HOME_DIR/pure/coo/30-touchpad.conf /etc/X11/xorg.conf.d
 git clone https://git.suckless.org/dwm $HOME_DIR/dwm
 cd $HOME_DIR/dwm
 sudo make install
+#nvchad
+git clone https://github.com/NvChad/NvChad $HOME_DIR/.config/nvim --depth 1
+cp -r ~/neoarch/configs/custom/ $HOME_DIR/.config/nvim/lua
