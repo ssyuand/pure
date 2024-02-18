@@ -12,7 +12,7 @@ sudo sed -i 's/^#NoProgressBar/DisableDownloadTimeout/' /etc/pacman.conf
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Environment configuration
 sudo tar -xvf $HOME_DIR/pure/coo/font.tar -C /usr/share/fonts
-sudo mkdir $HOME_DIR/.config/alacritty
+mkdir $HOME_DIR/.config/alacritty
 cp $HOME_DIR/pure/coo/alacritty.toml $HOME_DIR/.config/alacritty/
 cp $HOME_DIR/pure/coo/.bashrc $HOME_DIR/
 cp $HOME_DIR/pure/coo/.xinitrc $HOME_DIR/
