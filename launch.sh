@@ -25,4 +25,3 @@ cd $HOME_DIR/dwm
 sudo make install
 #nvchad
 git clone https://github.com/NvChad/NvChad $HOME_DIR/.config/nvim --depth 1
-cp -r ~/neoarch/configs/custom/ $HOME_DIR/.config/nvim/lua
