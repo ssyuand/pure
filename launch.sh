@@ -11,13 +11,13 @@ sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 sudo sed -i 's/^#NoProgressBar/DisableDownloadTimeout/' /etc/pacman.conf
 sudo sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
 # Environment configuration
-sudo tar -xvf $HOME_DIR/pure/coo/font.tar -C /usr/share/fonts
-mkdir $HOME_DIR/.config/alacritty
+mkdir $HOME_DIR/.config/ && mkdir $HOME_DIR/.config/alacritty
 cp $HOME_DIR/pure/coo/alacritty.toml $HOME_DIR/.config/alacritty/
 cp $HOME_DIR/pure/coo/.bashrc $HOME_DIR/
 cp $HOME_DIR/pure/coo/.xinitrc $HOME_DIR/
 cp $HOME_DIR/pure/coo/.gitconfig $HOME_DIR/
 cp $HOME_DIR/pure/coo/.tmux.conf $HOME_DIR/
+sudo tar -xvf $HOME_DIR/pure/coo/font.tar -C /usr/share/fonts
 sudo cp $HOME_DIR/pure/coo/30-touchpad.conf /etc/X11/xorg.conf.d
 # Dwm
 git clone https://git.suckless.org/dwm $HOME_DIR/dwm
