@@ -20,6 +20,9 @@ trash-cli         #Command-line tool to move files to trash.
 git-delta         #A syntax-highlighting pager for git, diff, and grep output
 xclip             #Xclip is a command-line tool to copy and paste data.
 xorg-xsetroot
+npm
+zip
+unzip
 # Input_Method
 fcitx5
 fcitx5-chewing
