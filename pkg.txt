@@ -31,3 +31,8 @@ fcitx5-im
 #font
 noto-fonts-cjk
 ttf-nerd-fonts-symbols
+# Language
+clang
+cargo
+rust
+rust-analyzer

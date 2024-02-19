@@ -21,8 +21,8 @@ sudo tar -xvf $HOME_DIR/pure/coo/font.tar -C /usr/share/fonts
 sudo cp $HOME_DIR/pure/coo/30-touchpad.conf /etc/X11/xorg.conf.d
 # Dwm
 git clone https://git.suckless.org/dwm $HOME_DIR/dwm
-sed -i '/^static const char \*termcmd.*=/ s/"st"/"alacritty"/' $HOME_DIR/dwm/config.h
-cd $HOME_DIR/dwm 
+cd $HOME_DIR/dwm
 sudo make install
 #nvchad
 git clone https://github.com/NvChad/NvChad $HOME_DIR/.config/nvim --depth 1
+sudo cp -r ~/pure/coo/custom/ ~/.config/nvim/lua/
