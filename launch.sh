@@ -26,4 +26,4 @@ sed -i '/^static const char \*termcmd.*=/ s/"st"/"alacritty"/' config.h
 sudo make install
 #nvchad
 git clone https://github.com/NvChad/NvChad $HOME_DIR/.config/nvim --depth 1
-sudo cp -r ~/pure/coo/custom/ ~/.config/nvim/lua/
+cp -r ~/pure/coo/custom/ ~/.config/nvim/lua/

@@ -8,6 +8,7 @@ setxkbmap -option altwin:swap_lalt_lwin
 setxkbmap -option ctrl:swap_rctrl_lwin
 
 ~/pure/coo/statusbar.sh &
+brillo -e -S 33
 
 # typing speed
 xset r rate 266 26
