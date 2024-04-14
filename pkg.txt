@@ -11,6 +11,7 @@ dhcpcd            #Dhcpcd is a "DHCP" and DHCPv6 client.
 alacritty         #Fast, Rust-based terminal emulator.
 bat               #Rust version of "cat" command with syntax highlighting.
 fd                #Fast, user-friendly alternative to "find" command.
+less              #A terminal based program for viewing text files
 ripgrep           #Rust version of "grep", line-oriented search tool.
 fzf               #Interactive fuzzy finder for the command-line.
 iwd               #IWD is the iNet wireless daemon.
